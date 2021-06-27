@@ -4,6 +4,7 @@ const FaqLanding = () => {
   const [expanded, setExpanded] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
   const [expanded3, setExpanded3] = useState(false);
+  const [expanded4, setExpanded4] = useState(false);
 
   return (
     <>
@@ -18,7 +19,10 @@ const FaqLanding = () => {
           <div className="w-1/2 px-20">
             <div>
               <div
-                className="flex justify-end justify-between"
+                className={
+                  "flex justify-end justify-between py-5 px-4 " +
+                  (expanded ? "bg-yellow-500" : "border-2")
+                }
                 onClick={() => setExpanded(!expanded)}
               >
                 <div className="">Dimana kami bisa membeli produk TBS</div>
@@ -27,27 +31,36 @@ const FaqLanding = () => {
                 </div>
               </div>
               {expanded && (
-                <p className="">
-                  Seluruh produk TBS bisa kamu beli di e-commerce, kantor pusat
-                  dan kantor distributor
-                </p>
+                <div className="border-2 animate-fade-in-down">
+                  <p className="pt-4 pb-10 px-4">
+                    Seluruh produk TBS bisa kamu beli di e-commerce, kantor
+                    pusat dan kantor distributor
+                  </p>
+                </div>
               )}
             </div>
             <div className="pt-5">
               <div
-                className="flex justify-end justify-between"
+                className={
+                  "flex justify-end justify-between py-5 px-4 " +
+                  (expanded2 ? "bg-yellow-500" : "border-2")
+                }
                 onClick={() => setExpanded2(!expanded2)}
               >
-                <div className="">Dimana kami bisa membeli produk TBS</div>
+                <div className="">
+                  Berapa kapasitas produksi TBS dalam waktu 1 bulan
+                </div>
                 <div className="py-1 pl-20">
                   {expanded2 ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </div>
               </div>
               {expanded2 && (
-                <p className="">
-                  Seluruh produk TBS bisa kamu beli di e-commerce, kantor pusat
-                  dan kantor distributor
-                </p>
+                <div className="border-2 animate-fade-in-down">
+                  <p className="pt-4 pb-10 px-4">
+                    Seluruh produk TBS bisa kamu beli di e-commerce, kantor
+                    pusat dan kantor distributor
+                  </p>
+                </div>
               )}
             </div>
           </div>
@@ -55,20 +68,52 @@ const FaqLanding = () => {
 
           <div className="w-1/2 px-20">
             <div
-              className="flex justify-start justify-between"
+              className={
+                "flex justify-end justify-between py-5 px-4 " +
+                (expanded3 ? "bg-yellow-500" : "border-2")
+              }
               onClick={() => setExpanded3(!expanded3)}
             >
-              <div className="">Dimana kami bisa membeli produk TBS</div>
+              <div className="">
+                Berapa lama waktu yang dibutuhkan jika ingin melakukan order
+                dalam jumlah yang besar?
+              </div>
               <div className="py-1 pl-20">
                 {expanded3 ? <AiOutlineMinus /> : <AiOutlinePlus />}
               </div>
             </div>
             {expanded3 && (
-              <p>
-                Seluruh produk TBS bisa kamu beli di e-commerce, kantor pusat
-                dan kantor distributor
-              </p>
+              <div className="border-2 animate-fade-in-down">
+                <p className="pt-4 pb-10 px-4">
+                  Seluruh produk TBS bisa kamu beli di e-commerce, kantor pusat
+                  dan kantor distributor
+                </p>
+              </div>
             )}
+            <div className="pt-5">
+              <div
+                className={
+                  "flex justify-end justify-between py-5 px-4 " +
+                  (expanded4 ? "bg-yellow-500" : "border-2")
+                }
+                onClick={() => setExpanded4(!expanded4)}
+              >
+                <div className="">
+                  Apa keunggulan produk TBS dibanding alat panen lainnya
+                </div>
+                <div className="py-1 pl-20">
+                  {expanded4 ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                </div>
+              </div>
+              {expanded4 && (
+                <div className="border-2 animate-fade-in-down">
+                  <p className="pt-4 pb-10 px-4">
+                    Seluruh produk TBS bisa kamu beli di e-commerce, kantor
+                    pusat dan kantor distributor
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,7 @@
+import Tele from "../assets/img/akar-icons_phone.svg";
+import Email from "../assets/img/carbon_email.svg";
+import Maps from "../assets/img/mdi_google-maps.svg";
+
 const Footer = () => {
   return (
     <>
@@ -9,11 +13,26 @@ const Footer = () => {
           <br />
           <div className="text-white ">
             <div className="font-bold">PT. Gloria Mandiri Teknik</div>
-            <div className="pt-4">info@gloriamandiriteknik.com</div>
-            <div className="pt-4">
-              Jalan Soekarno-Hatta No 10, Kec. Payung Sekaki, Pekanbaru
+            <div className="flex pt-4">
+              <div className="pr-10">
+                <img src={Email} alt="" />
+              </div>
+              <div>info@gloriamandiriteknik.com</div>
             </div>
-            <div className="pt-4">081225466738</div>
+            <div className="flex pt-4">
+              <div className="pr-10">
+                <img src={Maps} alt="" />
+              </div>
+              <div>
+                Jalan Soekarno-Hatta No 10, Kec. Payung Sekaki, Pekanbaru
+              </div>
+            </div>
+            <div className="flex pt-4">
+              <div className="pr-10">
+                <img src={Tele} alt="" />
+              </div>
+              <div>081225466738</div>
+            </div>
           </div>
         </div>
       </div>

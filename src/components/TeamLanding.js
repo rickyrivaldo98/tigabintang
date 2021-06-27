@@ -1,3 +1,5 @@
+import Teambg from "../assets/img/Teamlanding.svg";
+import "../assets/css/Team.css";
 const TeamLanding = () => {
   return (
     <>
@@ -6,7 +8,7 @@ const TeamLanding = () => {
           <div className="text-yellow-500 font-bold text-2xl">Our Team</div>
           <div className="font-bold text-4xl">Meet Our Team</div>
         </div>
-        <div className="bg-indigo-900">
+        <div className="bg-indigo-900 bg-teams">
           <section class="text-yellow-400 body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">

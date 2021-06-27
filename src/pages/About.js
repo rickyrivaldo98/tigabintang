@@ -1,5 +1,6 @@
 import AboutUs from "../components/AboutUs";
 import FaqLanding from "../components/FaqLanding";
+
 const About = () => {
   return (
     <>
