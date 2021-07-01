@@ -9,7 +9,7 @@ const AboutUs = () => {
     <>
       <div className="w-full bg-white ">
         <div className="flex py-16">
-          <div className="pl-20 w-1/2">
+          <div className="pl-20 w-1/2" data-aos="fade-right">
             <div className="">
               <img src={AboutImage} alt="" />
             </div>

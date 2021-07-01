@@ -12,7 +12,11 @@ const TeamLanding = () => {
           <section class="text-yellow-400 body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-                <div className="mb-10">ini gambar</div>
+                <div className="flex justify-center">
+                  <div className="mb-10 rounded-full bg-yellow-500 h-40 w-40 ">
+                    <img src="" alt="" />
+                  </div>
+                </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

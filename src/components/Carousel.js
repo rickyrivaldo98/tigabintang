@@ -21,10 +21,24 @@ const Carousel = () => {
         >
           <SwiperSlide>
             <img src={panen1} alt="" />
+            <div className="textContent">
+              <div className="text-xl text-white font-reguler">
+                WE ARE COMMITE
+              </div>
+              <div className="text-3xl text-white font-bold">
+                TO GIVE THE BEST HARVESTING TOOLS
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <img src={panen1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={panen1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={panen1} alt="" />
+          </SwiperSlide>
         </Swiper>
       </div>
     </>

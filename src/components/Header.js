@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <>
       <div className="mt-2">
-        <div className="">
+        <div className="" data-aos="zoom-in">
           <Carousel />
         </div>
         <div className="flex text-3xl w-full">
           <div className="w-1/3 py-20 bg-indigo-900 text-yellow-400">
-            <div className="flex justify-center">
+            <div className="flex justify-center" data-aos="fade-down">
               <div className="pr-7">
                 <img src={Vision} alt="" />
               </div>
@@ -27,7 +27,7 @@ const Header = () => {
             </div>
           </div>
           <div className="w-1/3 py-20 ">
-            <div className="flex justify-center">
+            <div className="flex justify-center" data-aos="fade-up">
               <div className="pr-7">
                 <img src={List} alt="" />
               </div>
@@ -41,7 +41,7 @@ const Header = () => {
             </div>
           </div>
           <div className="w-1/3 py-20 bg-indigo-900 text-yellow-400">
-            <div className="flex justify-center">
+            <div className="flex justify-center" data-aos="fade-down">
               <div className="pr-7">
                 <img src={Quality} alt="" />
               </div>
