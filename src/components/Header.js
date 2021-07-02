@@ -2,12 +2,11 @@ import List from "../assets/img/list.svg";
 import Quality from "../assets/img/quality.svg";
 import Vision from "../assets/img/vision.svg";
 import Carousel from "../components/Carousel";
-
 const Header = () => {
   return (
     <>
       <div className="mt-2">
-        <div className="" data-aos="zoom-in">
+        <div data-aos="zoom-in" className="">
           <Carousel />
         </div>
         <div className="flex text-3xl w-full">

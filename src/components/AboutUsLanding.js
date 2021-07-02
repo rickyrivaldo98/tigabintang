@@ -3,7 +3,7 @@ import CustomerSupport from "../assets/img/customer-support.svg";
 import Rating from "../assets/img/rating.svg";
 import Productivity from "../assets/img/productivity.svg";
 import Network from "../assets/img/network.svg";
-const AboutUs = () => {
+const AboutUsLanding = () => {
   return (
     <>
       <div className="w-full bg-white ">
@@ -13,7 +13,7 @@ const AboutUs = () => {
               <img src={AboutImage} alt="" />
             </div>
           </div>
-          <div className="pl-10 w-2/3">
+          <div data-aos="fade-left" className="pl-10 w-2/3">
             <div className="pt-10 text-4xl font-semibold text-yellow-400">
               Welcome to Tiga Bintang Sukses
             </div>
@@ -24,13 +24,13 @@ const AboutUs = () => {
               20 Years Experience
             </div>
             <div className="pt-6 text-3xl text-black">
-              Tiga Bintang Sukses (TBS) didirikan dalam memenuhi berbagai <br />{" "}
+              Tiga Bintang Sukses (TBS) didirikan dalam memenuhi berbagai <br />
               macam kebutuhan produk di bidang perkebunan kelapa sawit.
             </div>
             <div className="pt-6 text-3xl text-black">
               Kami memproduksi alat panen dengan kualitas terbaik dan sebagai
               <br />
-              distributor dalam menyediakan alat penunjang untuk melakukan{" "}
+              distributor dalam menyediakan alat penunjang untuk melakukan
               <br />
               panen sehingga menghasilkan hasil yang maksimal dan efektif.
             </div>
@@ -112,4 +112,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsLanding;
