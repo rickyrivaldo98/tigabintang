@@ -50,7 +50,7 @@ const AboutUsLanding = () => {
         <div className="flex text-4xl font-black">
           <div className="w-1/2 py-20 bg-indigo-900 text-yellow-400">
             <div className="w-full  flex ">
-              <div className="w-1/2">
+              <div data-aos="fade-up" className="w-1/2">
                 <div className="flex justify-center">
                   <div className="pr-5">
                     <img src={CustomerSupport} alt="" />
@@ -61,7 +61,7 @@ const AboutUsLanding = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2">
+              <div data-aos="fade-up" className="w-1/2">
                 <div className="flex justify-center">
                   <div className="pr-5">
                     <img src={Network} alt="" />
@@ -78,7 +78,7 @@ const AboutUsLanding = () => {
           </div>
           <div className="w-1/2 py-20 bg-yellow-400">
             <div className="w-full flex">
-              <div className="w-1/2">
+              <div data-aos="fade-down" className="w-1/2">
                 <div className=" flex justify-center">
                   <div className="pr-5">
                     <img src={Productivity} alt="" />
@@ -91,7 +91,7 @@ const AboutUsLanding = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2">
+              <div data-aos="fade-down" className="w-1/2">
                 <div className=" flex justify-center">
                   <div className="pr-5">
                     <img src={Rating} alt="" />
