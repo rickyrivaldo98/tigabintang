@@ -14,7 +14,10 @@ const ServiceLanding = () => {
         <div data-aos="fade-down" className="font-bold text-4xl">
           We Provide Service
         </div>
-        <div className="flex justify-center gap-x-40 py-14">
+        <div
+          data-aos="fade-down"
+          className="flex justify-center gap-x-40 py-14"
+        >
           <div className="h-96 w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
@@ -59,7 +62,9 @@ const ServiceLanding = () => {
           </div>
         </div>
         <div className="flex justify-center pt-10">
-          <div className="text-3xl py-3 w-64 bg-yellow-400">See More</div>
+          <div data-aos="fade-up" className="text-3xl py-3 w-64 bg-yellow-400">
+            See More
+          </div>
         </div>
       </div>
     </>

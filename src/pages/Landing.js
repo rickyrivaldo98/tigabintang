@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const Landing = () => {
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 3000,
       once: true,
     });
   }, []);

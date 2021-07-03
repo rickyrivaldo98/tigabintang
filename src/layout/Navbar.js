@@ -8,10 +8,10 @@ const Navbar = () => {
     <>
       <div className="mx-28 pt-10">
         <div className="flex justify-between">
-          <div className="text-6xl font-black">
+          <div data-aos="fade-right" className="text-6xl font-black">
             TIGA BINTANG <br /> SUKSES
           </div>
-          <div className="flex text-xl font-light">
+          <div data-aos="fade-up" className="flex text-xl font-light">
             <div className="flex pr-28 pt-5">
               <div>
                 <img src={Calendar} alt="" />
