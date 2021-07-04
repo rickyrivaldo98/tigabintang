@@ -5,9 +5,11 @@ const ServiceComp = () => {
   return (
     <>
       <div className="text-center w-full py-20 bg-white">
-        <div className="text-yellow-500 font-bold text-2xl">Our Service</div>
-        <div className="font-bold text-4xl">We Provide Service</div>
-        <div className="flex justify-center gap-x-40 py-14">
+        <div data-aos="fade-down">
+          <div className="text-yellow-500 font-bold text-2xl">Our Service</div>
+          <div className="font-bold text-4xl">We Provide Service</div>
+        </div>
+        <div data-aos="fade-up" className="flex justify-center gap-x-40 py-14">
           <div className="h-96 w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
@@ -56,7 +58,7 @@ const ServiceComp = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center gap-x-40 py-14">
+        <div data-aos="fade-up" className="flex justify-center gap-x-40 py-14">
           <div className="h-96 w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />

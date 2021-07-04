@@ -13,7 +13,7 @@ const AboutUs = () => {
               <img src={AboutImage} alt="" />
             </div>
           </div>
-          <div className="pl-10 w-2/3">
+          <div data-aos="fade-left" className="pl-10 w-2/3">
             <div className="pt-10 text-4xl font-semibold text-yellow-400">
               Welcome to Tiga Bintang Sukses
             </div>
