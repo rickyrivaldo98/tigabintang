@@ -7,10 +7,7 @@ const Service = () => {
         <div>Our Team</div>
         <span class="inline-block h-1 w-40 rounded bg-black mb-2"></span>
         <div className="font-thin pt-7">Home / Team</div>
-        <div
-          data-aos="fade-up"
-          className="md:flex justify-center gap-x-40 pt-40 pb-20"
-        >
+        <div className="md:flex justify-center gap-x-40 pt-40 pb-20">
           <div className="md:w-96 mt-10">
             <div className="flex justify-center">
               <div className="mb-10 rounded-full bg-indigo-900 h-40 w-40 ">
