@@ -15,11 +15,13 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <Header />
-      <AboutUsLanding />
-      <ServiceLanding />
-      <TeamLanding />
-      <FaqLanding />
+      <div className="overflow-hidden">
+        <Header />
+        <AboutUsLanding />
+        <ServiceLanding />
+        <TeamLanding />
+        <FaqLanding />
+      </div>
     </>
   );
 };

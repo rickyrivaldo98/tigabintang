@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="bg-yellow-400">
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/team">
             <Team />
@@ -33,7 +33,7 @@ function App() {
             <Landing />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
