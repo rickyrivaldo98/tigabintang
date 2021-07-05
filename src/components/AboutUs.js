@@ -8,12 +8,12 @@ const AboutUs = () => {
     <>
       <div className="w-full bg-white ">
         <div className="flex py-16">
-          <div data-aos="fade-right" className="pl-20 w-1/2">
+          <div className="pl-20 w-1/2">
             <div className="">
               <img src={AboutImage} alt="" />
             </div>
           </div>
-          <div data-aos="fade-left" className="pl-10 w-2/3">
+          <div className="pl-10 w-2/3">
             <div className="pt-10 text-4xl font-semibold text-yellow-400">
               Welcome to Tiga Bintang Sukses
             </div>
