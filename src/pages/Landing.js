@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Navbar from "../layout/Navbar";
 import Dropdown from "../layout/Dropdown";
 import { Burger, Menu } from "../layout";
+import Footer from "../layout/Footer";
 const Landing = () => {
   useEffect(() => {
     Aos.init({
@@ -35,6 +36,7 @@ const Landing = () => {
         <ServiceLanding />
         <TeamLanding />
         <FaqLanding />
+        <Footer />
       </div>
     </>
   );

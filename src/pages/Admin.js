@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import "../assets/css/admin.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -16,6 +16,31 @@ const StyledAdmin = styled.div`
 `;
 
 const Admin = () => {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
+  const alert = useAlert();
+
+  let history = useHistory();
+
+  useEffect(() => {
+    // setLoading(true);
+    axios
+      .get("https://api.tigabintangsukses.com/v1/user/checkUser", {
+        headers: {
+          Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+        },
+      })
+      .then((res) => {
+        setLoading(false);
+      })
+      .catch((err) => {
+        if (err.response.status === 401) {
+          history.push("/login");
+
+          alert.show("Anda belum login");
+        }
+      });
+  }, []);
   return (
     <>
       <StyledAdmin>

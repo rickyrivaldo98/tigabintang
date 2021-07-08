@@ -2,6 +2,7 @@ import ServiceComp from "../components/ServiceComp";
 import React, { useEffect, useState } from "react";
 import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 
 const Service = () => {
   // fungsi navbar
@@ -21,6 +22,7 @@ const Service = () => {
         <div className="font-thin pt-7">Home / Service</div>
       </div>
       <ServiceComp />
+      <Footer />
     </>
   );
 };

@@ -8,20 +8,18 @@ import Product from "./pages/Product";
 import Service from "./pages/Service";
 import Team from "./pages/Team";
 import Admin from "./pages/Admin";
-import Login from "./auth/Login";
+import Login from "./pages/auth/Login";
+import PublicRoute from "./pages/utils/PublicRoute";
+import PrivateRoute from "./pages/utils/PrivateRoute";
 
 function App() {
   return (
     <>
-      <div className="bg-yellow-400">
-        {/* <Navbar /> */}
-        <Switch>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/admin">
-            <Admin />
-          </Route>
+      {/* <Navbar /> */}
+      <Switch>
+        <PublicRoute path="/login" component={Login} />
+        <PrivateRoute path="/admin" component={Admin} />
+        <div className="bg-yellow-400">
           <Route exact path="/team">
             <Team />
           </Route>
@@ -40,9 +38,9 @@ function App() {
           <Route exact path="/">
             <Landing />
           </Route>
-        </Switch>
-        {/* <Footer /> */}
-      </div>
+        </div>
+      </Switch>
+      {/* <Footer /> */}
     </>
   );
 }

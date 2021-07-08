@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { createPopper } from "@popperjs/core";
 import { Link, useHistory } from "react-router-dom";
-
+import { useAlert } from "react-alert";
+import { removeUserSession } from "../utils/common";
 const UserDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -18,8 +19,15 @@ const UserDropdown = () => {
   };
   // handle click event of logout button
   let history = useHistory();
+  const alert = useAlert();
 
-  const handleLogout = () => {};
+  const handleLogout = () => {
+    removeUserSession();
+    alert.show("Berhasil Logout");
+    setTimeout(() => {
+      history.push("/login");
+    }, 3000);
+  };
   return (
     <>
       <a

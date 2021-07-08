@@ -2,6 +2,7 @@ import ContactComp from "../components/ContactComp";
 import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import React, { useEffect, useState } from "react";
+import Footer from "../layout/Footer";
 
 const Contact = () => {
   // fungsi navbar
@@ -21,6 +22,7 @@ const Contact = () => {
         <div className="font-thin pt-7">Home / Contact Us</div>
       </div>
       <ContactComp />
+      <Footer />
     </>
   );
 };
