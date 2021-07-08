@@ -9,15 +9,22 @@ const Header = () => {
         <div data-aos="zoom-in" className="">
           <Carousel />
         </div>
-        <div className="flex text-3xl w-full">
-          <div className="w-1/3 py-20 bg-indigo-900 text-yellow-400">
-            <div className="flex justify-center" data-aos="fade-down">
-              <div className="pr-7">
-                <img src={Vision} alt="" />
+        <div className="flex-none md:flex text-3xl w-full">
+          <div className="w-full md:w-1/3 py-20 bg-indigo-900 text-yellow-400">
+            <div
+              className="grid grid-cols-1  md:flex md:justify-center"
+              data-aos="fade-down"
+            >
+              <div className="md:pr-7 my-5 md:my-0">
+                <img
+                  className="mx-auto w-20 md:w-auto"
+                  src={Vision}
+                  alt="vision"
+                />
               </div>
               <div>
-                <div>OUR VISION</div>
-                <div className="text-base w-80">
+                <div className="text-center  md:text-left">OUR VISION</div>
+                <div className="text-center md:text-left mx-auto md:mx-none text-base w-80">
                   Menjadi salah satu produsen dan supplier terbaik dalam
                   menyediakan kebutuhan alat panen sawit yang berkualitas dengan
                   harga yang kompetitif.
@@ -25,28 +32,38 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 py-20 ">
-            <div className="flex justify-center" data-aos="fade-up">
-              <div className="pr-7">
-                <img src={List} alt="" />
+          <div className="w-full md:w-1/3 py-20 ">
+            <div
+              className="grid grid-cols-1  md:flex md:justify-center"
+              data-aos="fade-up"
+            >
+              <div className="md:pr-7 my-5 md:my-0">
+                <img
+                  className="mx-auto  w-20 md:w-auto"
+                  src={List}
+                  alt="list"
+                />
               </div>
               <div>
-                <div>OUR PRIORITY</div>
-                <div className="text-base w-80">
+                <div className="text-center  md:text-left">OUR PRIORITY</div>
+                <div className="text-center md:text-left mx-auto md:mx-none text-base w-80">
                   Memberikan kepuasan kualitas dan pelayanan yang maksimal bagi
                   pelanggan
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-1/3 py-20 bg-indigo-900 text-yellow-400">
-            <div className="flex justify-center" data-aos="fade-down">
-              <div className="pr-7">
-                <img src={Quality} alt="" />
+          <div className="w-full md:w-1/3 py-20 bg-indigo-900 text-yellow-400">
+            <div
+              className="grid grid-cols-1  md:flex md:justify-center"
+              data-aos="fade-down"
+            >
+              <div className="md:pr-7 my-5 md:my-0">
+                <img className="mx-auto  w-20 md:w-auto" src={Quality} alt="" />
               </div>
               <div>
-                <div>OUR SUPERIORITY</div>
-                <div className="text-base w-80">
+                <div className="text-center  md:text-left">OUR SUPERIORITY</div>
+                <div className="text-center md:text-left mx-auto md:mx-none text-base w-80">
                   Kami menempah besi baja terbaik yang dicustom khusus
                 </div>
               </div>

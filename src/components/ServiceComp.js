@@ -4,13 +4,11 @@ import { AiOutlinePlus } from "react-icons/ai";
 const ServiceComp = () => {
   return (
     <>
-      <div className="text-center w-full py-20 bg-white">
-        <div data-aos="fade-down">
-          <div className="text-yellow-500 font-bold text-2xl">Our Service</div>
-          <div className="font-bold text-4xl">We Provide Service</div>
-        </div>
-        <div data-aos="fade-up" className="flex justify-center gap-x-40 py-14">
-          <div className="h-96 w-96">
+      <div className="text-center w-full py-20 bg-white overflow-hidden">
+        <div className="text-yellow-500 font-bold text-2xl">Our Service</div>
+        <div className="font-bold text-4xl">We Provide Service</div>
+        <div className="md:flex md:justify-center  gap-x-20 py-14">
+          <div className="md:h-96 mb-5 md:mb-0 w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">
@@ -29,7 +27,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="h-96 w-96">
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
@@ -43,7 +41,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="h-96 w-96">
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
@@ -58,8 +56,8 @@ const ServiceComp = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="flex justify-center gap-x-40 py-14">
-          <div className="h-96 w-96">
+        <div className="md:flex md:justify-center  gap-x-20 py-14">
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
@@ -73,7 +71,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="h-96 w-96">
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
@@ -87,7 +85,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="h-96 w-96">
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
