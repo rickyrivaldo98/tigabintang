@@ -16,15 +16,15 @@ const ServiceLanding = () => {
         </div>
         <div
           data-aos="fade-down"
-          className="md:flex md:justify-center  gap-x-20 py-14"
+          className="flex-none lg:flex justify-center items-center text-center gap-x-20 py-14"
         >
-          <div className="md:h-96 mb-5 md:mb-0 w-96">
+          <div className="lg:h-96 mb-5 md:mb-4  w-76 sm:w-96  mx-auto ">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-lg font-bold text-yellow-500">
+              <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
                 Mencetak alat panen perkebunan
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
@@ -32,13 +32,13 @@ const ServiceLanding = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div className="lg:h-96 mb-5 md:mb-0  w-76 sm:w-96  mx-auto">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-md md:text-lg font-bold text-yellow-500">
+              <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
                 Mencetak alat panen perkebunan
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
@@ -46,13 +46,13 @@ const ServiceLanding = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div className="lg:h-96 mb-5 md:mb-0 w-76 sm:w-96  mx-auto">
             <div className="serviceMenu">
               <img src={panen1} alt="" />
               <div className="textServices">Halo</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-lg font-bold text-yellow-500">
+              <div className="px-2 py-4 text-sm sm:text-lg font-bold text-yellow-500">
                 Mencetak alat panen perkebunan
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">

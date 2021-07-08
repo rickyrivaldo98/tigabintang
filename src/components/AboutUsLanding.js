@@ -49,24 +49,26 @@ const AboutUsLanding = () => {
         </div>
         <div className="md:flex text-4xl font-black">
           <div className="w-full md:w-1/2 py-20 bg-indigo-900 text-yellow-400">
-            <div className="w-full  flex">
-              <div data-aos="fade-up" className="w-1/2">
-                <div className="flex justify-center">
-                  <div className="pr-5">
+            <div className="w-full  md:flex">
+              <div data-aos="fade-up" className="w-full md:w-1/2">
+                <div className="mx-auto flex justify-center">
+                  <div className="md:pr-5">
                     <img src={CustomerSupport} alt="" />
                   </div>
-                  <div>
-                    <div className="text-md">100.000</div>
-                    <div className="pt-2">TOOLS SOLD</div>
+                  <div className="ml-4">
+                    <div className="text-md ">100.000</div>
+                    <div className="text-2xl w-48 leading-5 pt-2">
+                      TOOLS SOLD
+                    </div>
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-up" className="w-1/2">
-                <div className="flex justify-center">
-                  <div className="pr-5">
+              <div data-aos="fade-up" className="w-full md:w-1/2 mt-6 md:mt-0">
+                <div className="mx-auto flex justify-center">
+                  <div className="md:pr-5">
                     <img src={Network} alt="" />
                   </div>
-                  <div>
+                  <div className="ml-4">
                     <div>10</div>
                     <div className="text-2xl w-48 leading-5 pt-2">
                       COMPANY COLLABORATION
@@ -77,13 +79,13 @@ const AboutUsLanding = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 py-20 bg-yellow-400">
-            <div className="w-full flex">
-              <div data-aos="fade-down" className="w-1/2">
-                <div className=" flex justify-center">
+            <div className="w-full  md:flex">
+              <div data-aos="fade-down" className="w-full md:w-1/2">
+                <div className="mx-auto flex justify-center">
                   <div className="pr-5">
                     <img src={Productivity} alt="" />
                   </div>
-                  <div>
+                  <div className="ml-4">
                     <div>5000pcs</div>
                     <div className="text-2xl w-48 leading-5 pt-2">
                       PRODUCTIVITY/ MONTH
@@ -91,12 +93,15 @@ const AboutUsLanding = () => {
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-down" className="w-1/2">
-                <div className=" flex justify-center">
+              <div
+                data-aos="fade-down"
+                className="w-full md:w-1/2 mt-6 md:mt-0"
+              >
+                <div className="mx-auto flex justify-center">
                   <div className="pr-5">
                     <img src={Rating} alt="" />
                   </div>
-                  <div>
+                  <div className="ml-4">
                     <div>30</div>
                     <div className="text-2xl w-48 leading-5 pt-2">
                       SATISFIED CUSTOMER

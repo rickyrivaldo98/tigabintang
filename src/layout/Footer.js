@@ -5,13 +5,13 @@ import Maps from "../assets/img/mdi_google-maps.svg";
 const Footer = () => {
   return (
     <>
-      <div className="bg-indigo-900 w-full pb-40 pt-20 px-28">
-        <div data-aos="fade-right" className="text-3xl">
-          <div className="text-5xl font-black text-yellow-400">
+      <div className="bg-indigo-900 w-full pb-40 pt-20 ">
+        <div data-aos="fade-right" className="text-3xl container mx-auto">
+          <div className="text-xl lg:text-5xl font-black text-yellow-400 pl-5">
             Official Contact :
           </div>
           <br />
-          <div className="text-white ">
+          <div className="text-white text-lg lg:text-3xl pl-5">
             <div className="font-bold">PT. Gloria Mandiri Teknik</div>
             <div className="flex pt-4">
               <div className="pr-10">
@@ -20,8 +20,8 @@ const Footer = () => {
               <div>info@gloriamandiriteknik.com</div>
             </div>
             <div className="flex pt-4">
-              <div className="pr-10">
-                <img src={Maps} alt="" />
+              <div className="pr-14 md:pr-10">
+                <img className="m-auto" src={Maps} alt="" />
               </div>
               <div>
                 Jalan Soekarno-Hatta No 10, Kec. Payung Sekaki, Pekanbaru

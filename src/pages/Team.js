@@ -1,14 +1,27 @@
 import panen1 from "../assets/img/panen1.svg";
+import React, { useEffect, useState } from "react";
+
 import "../assets/css/Service.css";
+import { Menu } from "../layout";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 const Service = () => {
+  // fungsi navbar
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
+      <Menu open={isOpen} setOpen={setIsOpen} />
+      <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div>Our Team</div>
         <span class="inline-block h-1 w-40 rounded bg-black mb-2"></span>
         <div className="font-thin pt-7">Home / Team</div>
-        <div className="md:flex justify-center gap-x-40 pt-40 pb-20">
-          <div className="md:w-96 mt-10">
+        <div className="lg:flex justify-center gap-x-40 pt-40 pb-20 flex-none mx-auto">
+          <div className="lg:w-96 mt-10">
             <div className="flex justify-center">
               <div className="mb-10 rounded-full bg-indigo-900 h-40 w-40 ">
                 <img src="" alt="" />
@@ -32,7 +45,7 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <div className="md:w-96 mt-10">
+          <div className="lg:w-96 mt-10">
             <div className="flex justify-center">
               <div className="mb-10 rounded-full bg-indigo-900 h-40 w-40 ">
                 <img src="" alt="" />
@@ -56,7 +69,7 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <div className="md:w-96 mt-10">
+          <div className="lg:w-96 mt-10">
             <div className="flex justify-center">
               <div className="mb-10 rounded-full bg-indigo-900 h-40 w-40 ">
                 <img src="" alt="" />
@@ -82,6 +95,7 @@ const Service = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
