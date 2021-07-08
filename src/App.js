@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Service from "./pages/Service";
 import Team from "./pages/Team";
+import Admin from "./pages/Admin";
+import Login from "./auth/Login";
 
 function App() {
   return (
@@ -14,6 +16,12 @@ function App() {
       <div className="bg-yellow-400">
         <Navbar />
         <Switch>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/admin">
+            <Admin />
+          </Route>
           <Route exact path="/team">
             <Team />
           </Route>
