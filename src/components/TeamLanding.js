@@ -1,4 +1,5 @@
 import Teambg from "../assets/img/Teamlanding.svg";
+import Team1 from "../assets/img/tim1.jpeg";
 import "../assets/css/Team.css";
 const TeamLanding = () => {
   return (
@@ -15,8 +16,12 @@ const TeamLanding = () => {
             <div class="container px-5 py-24 mx-auto">
               <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                 <div data-aos="fade-down" className="flex justify-center">
-                  <div className="mb-10 rounded-full bg-yellow-500 h-40 w-40 ">
-                    <img src="" alt="" />
+                  <div>
+                    <img
+                      className="mb-10 rounded-full bg-yellow-500 h-40 w-40 "
+                      src={Team1}
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div data-aos="fade-up">

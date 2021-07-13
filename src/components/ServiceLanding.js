@@ -1,4 +1,6 @@
-import panen1 from "../assets/img/panen1.svg";
+import service1 from "../assets/img/service1.jpeg";
+import service2 from "../assets/img/service2.jpeg";
+import service3 from "../assets/img/service3.jpeg";
 import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
 const ServiceLanding = () => {
@@ -20,8 +22,8 @@ const ServiceLanding = () => {
         >
           <div className="lg:h-96 mb-5 md:mb-4  w-76 sm:w-96  mx-auto ">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service1} alt="" />
+              <div className="textServices">Mencetak alat panen perkebunan</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
@@ -34,12 +36,14 @@ const ServiceLanding = () => {
           </div>
           <div className="lg:h-96 mb-5 md:mb-0  w-76 sm:w-96  mx-auto">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service2} alt="" />
+              <div className="textServices">
+                Perbaikan produk yang bergaransi
+              </div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+                Perbaikan produk yang bergaransi
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />
@@ -48,12 +52,12 @@ const ServiceLanding = () => {
           </div>
           <div className="lg:h-96 mb-5 md:mb-0 w-76 sm:w-96  mx-auto">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service3} alt="" />
+              <div className="textServices">Penyetelan Besi</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4 text-sm sm:text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+                Penyetelan Besi
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />

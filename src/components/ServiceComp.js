@@ -1,4 +1,9 @@
-import panen1 from "../assets/img/panen1.svg";
+import service1 from "../assets/img/service1.jpeg";
+import service2 from "../assets/img/service2.jpeg";
+import service3 from "../assets/img/service3.jpeg";
+import service4 from "../assets/img/service4.png";
+import service5 from "../assets/img/service5.jpeg";
+import service6 from "../assets/img/service6.png";
 import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
 const ServiceComp = () => {
@@ -10,17 +15,28 @@ const ServiceComp = () => {
         <div className="md:flex md:justify-center  gap-x-20 py-14">
           <div className="md:h-96 mb-5 md:mb-0 w-96">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
+              <img src={service1} alt="" />
+              <div className="textServices">Mencetak alat panen perkebunan</div>
+            </div>
+            <div className="flex justify-between bg-indigo-900">
+              <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
+                Mencetak alat panen perkebunan
+              </div>
+              <div className="pt-3 text-4xl px-4 bg-yellow-500">
+                <AiOutlinePlus />
+              </div>
+            </div>
+          </div>
+          <div className="md:h-96 mb-5 md:mb-0  w-96">
+            <div className="serviceMenu">
+              <img src={service2} alt="" />
               <div className="textServices">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                vulputate. Aliquam metus tortor, auctor id gravida condimentum,
-                viverra quis sem.
+                Perbaikan produk yang bergaransi
               </div>
             </div>
             <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+              <div className="px-2 py-4  text-sm sm:text-lg font-bold text-yellow-500">
+                Perbaikan produk yang bergaransi
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />
@@ -29,26 +45,12 @@ const ServiceComp = () => {
           </div>
           <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service3} alt="" />
+              <div className="textServices">Penyetelan Besi</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
-              </div>
-              <div className="pt-3 text-4xl px-4 bg-yellow-500">
-                <AiOutlinePlus />
-              </div>
-            </div>
-          </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
-            <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
-            </div>
-            <div className="flex justify-between bg-indigo-900">
-              <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+              <div className="px-2 py-4 text-sm sm:text-lg font-bold text-yellow-500">
+                Penyetelan Besi
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />
@@ -59,12 +61,12 @@ const ServiceComp = () => {
         <div className="md:flex md:justify-center  gap-x-20 py-14">
           <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service4} alt="" />
+              <div className="textServices">Menjual Aksesoris Alat Panen</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+                Menjual Aksesoris Alat Panen
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />
@@ -73,12 +75,12 @@ const ServiceComp = () => {
           </div>
           <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service5} alt="" />
+              <div className="textServices">Packing</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+                Packing
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />
@@ -87,12 +89,12 @@ const ServiceComp = () => {
           </div>
           <div className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
-              <img src={panen1} alt="" />
-              <div className="textServices">Halo</div>
+              <img src={service6} alt="" />
+              <div className="textServices">Menjual Penutup Keamanan</div>
             </div>
             <div className="flex justify-between bg-indigo-900">
               <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                Mencetak alat panen perkebunan
+                Menjual Penutup Keamanan
               </div>
               <div className="pt-3 text-4xl px-4 bg-yellow-500">
                 <AiOutlinePlus />

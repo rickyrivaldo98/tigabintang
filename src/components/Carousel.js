@@ -1,4 +1,6 @@
 import panen1 from "../assets/img/panen1.svg";
+import panen2 from "../assets/img/panen2.jpg";
+import panen3 from "../assets/img/panen3.jpg";
 import "../assets/css/Carousel-css.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -31,13 +33,26 @@ const Carousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={panen1} alt="" />
+            <img src={panen2} alt="" />
+            <div className="textContent">
+              <div className="text-xl text-white font-reguler">
+                WE ARE PROVIDE
+              </div>
+              <div className="text-3xl text-white font-bold">
+                QUALITY AND COMPLETE PRODUCT
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={panen1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={panen1} alt="" />
+            <img src={panen3} alt="" />
+            <div className="textContent">
+              <div className="text-xl text-white font-reguler">
+                TO SIMPLIFY YOU
+              </div>
+              <div className="text-3xl text-white font-bold">
+                WHEN HARVEST THE OIL PALM
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>

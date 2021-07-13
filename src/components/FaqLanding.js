@@ -59,8 +59,9 @@ const FaqLanding = () => {
               {expanded2 && (
                 <div className="border-2 animate-fade-in-down">
                   <p className="pt-4 pb-10 px-4">
-                    Seluruh produk TBS bisa kamu beli di e-commerce, kantor
-                    pusat dan kantor distributor
+                    Kami mampu memproduksi Egrek, Kampak, Dodos dengan total
+                    produksi 5.000 pcs & Gancu, Tojok dengan jumlah 1.000 pcs
+                    Setiap bulannya.
                   </p>
                 </div>
               )}
@@ -88,8 +89,7 @@ const FaqLanding = () => {
             {expanded3 && (
               <div className="border-2 animate-fade-in-down">
                 <p className="pt-4 pb-10 px-4">
-                  Seluruh produk TBS bisa kamu beli di e-commerce, kantor pusat
-                  dan kantor distributor
+                  Produk special order membutuhkan waktu 1-2 minggu pengerjaan
                 </p>
               </div>
             )}
@@ -111,8 +111,13 @@ const FaqLanding = () => {
               {expanded4 && (
                 <div className="border-2 animate-fade-in-down">
                   <p className="pt-4 pb-10 px-4">
-                    Seluruh produk TBS bisa kamu beli di e-commerce, kantor
-                    pusat dan kantor distributor
+                    TBS berpengalaman memproduksi alat panen lebih dari 20
+                    tahun. Pada kurun waktu tersebut kami terus berinovasi
+                    sehingga mampu memberikan kualitas produk dan garansi produk
+                    akan diganti baru jika sompel, hal ini dikarenakan kami
+                    sangat memperhatikan kualitas alat panen dalam proses
+                    produksi, quality control yang baik, dan bahan baku baja
+                    yang di custom special.
                   </p>
                 </div>
               )}

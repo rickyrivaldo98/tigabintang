@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import ProductComp from "../components/ProductComp";
 
 const Product = () => {
   // fungsi navbar
@@ -20,6 +21,7 @@ const Product = () => {
         <span class="inline-block h-1 w-40 rounded bg-black mb-2"></span>
         <div className="font-thin pt-7">Home / Product</div>
       </div>
+      <ProductComp />
       <Footer />
     </>
   );
