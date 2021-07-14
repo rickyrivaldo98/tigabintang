@@ -76,7 +76,7 @@ export default function Sidebar() {
                       ? "text-blue-500 hover:text-blue-600"
                       : "text-gray-700 hover:text-gray-500")
                   }
-                  to="/admin/dashboard"
+                  to="/admin/produk"
                 >
                   <i
                     className={
