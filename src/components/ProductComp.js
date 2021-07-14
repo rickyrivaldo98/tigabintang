@@ -38,9 +38,9 @@ const ProductComp = () => {
               Our Product
             </div>
             <div className="font-bold text-4xl">We Provide Product</div>
-            <div className="md:flex md:justify-center  gap-x-20 py-14">
+            <div className="grid grid-cols-3 mx-auto container gap-y-16">
               {Data.map((x) => (
-                <div className="md:h-96 mb-5 md:mb-0 w-96">
+                <div className="md:h-96 mb-5 md:mb-0 w-96  mx-auto">
                   <div className="serviceMenu">
                     <img
                       src={
