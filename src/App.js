@@ -11,6 +11,7 @@ import Admin from "./pages/Admin";
 import Login from "./pages/auth/Login";
 import PublicRoute from "./pages/utils/PublicRoute";
 import PrivateRoute from "./pages/utils/PrivateRoute";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/produk">
             <Product />
+          </Route>
+          <Route exact path="/produk/:id">
+            <Detail />
           </Route>
           <Route exact path="/contact">
             <Contact />
