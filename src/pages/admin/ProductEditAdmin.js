@@ -43,8 +43,8 @@ const ProductEditAdmin = () => {
         setData(res.data.data);
         setnamaProduk(res.data.data.nama_produk);
         setgambarproduk(res.data.data.gambar_produk);
-        setlinkTokopedia(res.data.data.linkTokopedia);
-        setlinkShoppe(res.data.data.linkShoppe);
+        setlinkTokopedia(res.data.data.link_tokopedia);
+        setlinkShoppe(res.data.data.link_shoppe);
         setKategori(res.data.data.kategori);
         setContent(
           EditorState.createWithContent(
