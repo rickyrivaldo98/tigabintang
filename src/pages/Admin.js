@@ -8,8 +8,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useAlert } from "react-alert";
 
 import Sidebar from "./admin/Sidebar";
-import Navbar_admin from "./admin/Navbar_admin";
+import NavbarAdmin from "./admin/Navbar_admin";
 import Dashboard from "./admin/Dashboard";
+import ProductAdmin from "./admin/ProductAdmin";
+import EditAdmin from "./admin/ProductEditAdmin";
 
 const StyledAdmin = styled.div`
   font-family: "Nunito";
@@ -46,13 +48,17 @@ const Admin = () => {
       <StyledAdmin>
         <Sidebar />
         <div className="relative md:ml-64">
-          <Navbar_admin />
+          <NavbarAdmin />
           <Dashboard />
           <div className="px-4 md:px-10 mx-auto w-full -m-24">
             <Switch>
               <Route path="/admin/dashboard">{/* <Dashboard /> */}</Route>
-              <Route path="/admin/gallery"></Route>
-              <Route path="/admin/addgallery"></Route>
+              <Route path="/admin/produk">
+                <ProductAdmin />
+              </Route>
+              <Route path="/admin/editproduk/:id">
+                <EditAdmin />
+              </Route>
             </Switch>
           </div>
         </div>
