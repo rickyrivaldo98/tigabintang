@@ -12,8 +12,16 @@ import Login from "./pages/auth/Login";
 import PublicRoute from "./pages/utils/PublicRoute";
 import PrivateRoute from "./pages/utils/PrivateRoute";
 import Detail from "./pages/Detail";
-
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 3000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       {/* <Navbar /> */}
