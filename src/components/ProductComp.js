@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import panen1 from "../assets/img/panen1.svg";
 import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const ProductComp = () => {
   const [Data, setData] = useState([]);
   const [Loading, setLoading] = useState(false);
@@ -40,6 +41,7 @@ const ProductComp = () => {
             <div className="font-bold text-4xl">We Provide Product</div>
             <div className="grid grid-cols-3 mx-auto container gap-y-16">
               {Data.map((x) => (
+                <Link to={`/produk/${x.id}`}>
                 <div className="md:h-96 mb-5 md:mb-0 w-96  mx-auto">
                   <div className="serviceMenu">
                     <img
@@ -60,6 +62,7 @@ const ProductComp = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
               ))}
             </div>
           </div>

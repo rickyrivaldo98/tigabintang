@@ -52,8 +52,8 @@ const Detail = () => {
         {Loading && <div>Loading</div>}
         {!Loading && (
           <>
-            <div className="text-left flex-none lg:flex  py-16">
-              <div className="lg:pl-20 w-full lg:w-1/2">
+            <div className="text-left grid grid-cols-1 lg:grid-cols-2  py-16">
+              <div className=" w-full">
                 <div className="">
                   <img
                     src={
@@ -64,24 +64,24 @@ const Detail = () => {
                   />
                 </div>
               </div>
-              <div className="mx-auto md:pl-10 w-2/3">
-                <div className="text-4xl font-medium mb-5">
+              <div className="m-auto">
+                <div className="text-xl md:text-4xl font-medium mb-5">
                   {Data.nama_produk}
                 </div>
-                <div className="text-3xl font-normal py-5 px-5 bg-gray-200">
+                <div className="text-xl md:text-3xl font-normal py-5 px-5 bg-gray-200">
                   Deskripsi Produk
                 </div>
-                <div className="text-2xl py-5 pl-5">
+                <div className="text-xl md:text-2xl py-5 pl-5">
                   {Data.deskripsi_produk}
                 </div>
 
-                <div className="flex">
+                <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2">
                   {Data.link_tokopedia == null && Data.link_shoppe == null ? (
                     <div className="text-3xl font-medium text-white py-5 px-20 bg-black">
                       Maaf Stock Habis
                     </div>
                   ) : Data.link_shoppe == null &&
-                    Data.link_tokopedia !== null ? (
+                    Data.link_tokopedia != null ? (
                     <a
                       className="mr-5 text-3xl font-medium text-white py-5 px-20 bg-green-700"
                       target="_blank"
@@ -91,19 +91,19 @@ const Detail = () => {
                       Beli di Tokopedia
                     </a>
                   ) : Data.link_tokopedia == null &&
-                    Data.link_shoppe !== null ? (
+                    Data.link_shoppe != null ? (
                     <a
                       className="mr-5 text-3xl font-medium text-white py-5 px-20 bg-red-500"
                       target="_blank"
                       rel="noreferrer"
                       href={`${Data.link_shoppe}`}
                     >
-                      Beli di Shoppe
+                      Beli di Shopee
                     </a>
                   ) : (
                     <>
                       <a
-                        className="mr-5 text-3xl font-medium text-white py-5 px-20 bg-green-700"
+                        className="mr-5 text-xl font-medium text-center text-white py-5 px-10 lg:px-20 bg-green-700"
                         target="_blank"
                         rel="noreferrer"
                         href={`${Data.link_tokopedia}`}
@@ -111,12 +111,12 @@ const Detail = () => {
                         Beli di Tokopedia
                       </a>
                       <a
-                        className="mr-5 text-3xl font-medium text-white py-5 px-20 bg-red-500"
+                        className="mr-5 text-xl text-center font-medium text-white py-5 px-10 lg:px-20 bg-red-500"
                         target="_blank"
                         rel="noreferrer"
                         href={`${Data.link_shoppe}`}
                       >
-                        Beli di Shoppe
+                        Beli di Shopee
                       </a>
                     </>
                   )}
