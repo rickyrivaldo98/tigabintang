@@ -39,29 +39,29 @@ const ProductComp = () => {
               Our Product
             </div>
             <div className="font-bold text-4xl">We Provide Product</div>
-            <div className="grid grid-cols-3 mx-auto container gap-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-x-0 md:gap-y-20 lg:grid-cols-3 mx-auto container gap-y-16">
               {Data.map((x) => (
                 <Link to={`/produk/${x.id}`}>
-                <div className="md:h-96 mb-5 md:mb-0 w-96  mx-auto">
-                  <div className="serviceMenu">
-                    <img
-                      src={
-                        "https://api.tigabintangsukses.com/uploads/" +
-                        x.gambar_produk
-                      }
-                      alt=""
-                    />
-                    <div className="textServices">{x.deskripsi_produk}</div>
-                  </div>
-                  <div className="flex justify-between bg-indigo-900">
-                    <div className="px-2 py-4 text-lg font-bold text-yellow-500">
-                      {x.nama_produk}
+                  <div className="md:h-96 mb-5 md:mb-0 w-96  mx-auto">
+                    <div className="serviceMenu">
+                      <img
+                        src={
+                          "https://api.tigabintangsukses.com/uploads/" +
+                          x.gambar_produk
+                        }
+                        alt=""
+                      />
+                      <div className="textServices">{x.deskripsi_produk}</div>
                     </div>
-                    <div className="pt-3 text-4xl px-4 bg-yellow-500">
-                      <AiOutlinePlus />
+                    <div className="flex justify-between bg-indigo-900">
+                      <div className="px-2 py-4 text-lg font-bold text-yellow-500">
+                        {x.nama_produk}
+                      </div>
+                      <div className="pt-3 text-4xl px-4 bg-yellow-500">
+                        <AiOutlinePlus />
+                      </div>
                     </div>
                   </div>
-                </div>
                 </Link>
               ))}
             </div>
