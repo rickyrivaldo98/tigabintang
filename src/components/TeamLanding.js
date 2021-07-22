@@ -1,6 +1,8 @@
 import Teambg from "../assets/img/Teamlanding.svg";
 import Team1 from "../assets/img/tim1.jpeg";
 import "../assets/css/Team.css";
+import { Link } from "react-router-dom";
+
 const TeamLanding = () => {
   return (
     <>
@@ -46,12 +48,14 @@ const TeamLanding = () => {
                 {/* <p class="">Senior Product Designer</p> */}
               </div>
               <div className="flex justify-center text-center pt-20">
-                <div
-                  data-aos="fade-down"
-                  className="text-lg md:text-3xl py-3 w-40 md:w-64 bg-yellow-400 text-black"
-                >
-                  See More
-                </div>
+                <Link to="/team">
+                  <div
+                    data-aos="fade-down"
+                    className="text-lg md:text-3xl py-3 w-40 md:w-64 bg-yellow-400 text-black"
+                  >
+                    See More
+                  </div>
+                </Link>
               </div>
             </div>
           </section>

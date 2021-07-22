@@ -4,6 +4,8 @@ import panen1 from "../assets/img/panen1.svg";
 import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import parse from "html-react-parser";
+
 const ProductComp = () => {
   const [Data, setData] = useState([]);
   const [Loading, setLoading] = useState(false);
@@ -51,7 +53,9 @@ const ProductComp = () => {
                         }
                         alt=""
                       />
-                      <div className="textServices">{x.deskripsi_produk}</div>
+                      <div className="textServices">
+                        {parse(`${x.deskripsi_produk.substring(0, 50)}...`)}
+                      </div>
                     </div>
                     <div className="flex justify-between bg-indigo-900">
                       <div className="px-2 py-4 text-lg font-bold text-yellow-500">

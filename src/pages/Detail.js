@@ -5,6 +5,8 @@ import Footer from "../layout/Footer";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { data } from "autoprefixer";
+import parse from "html-react-parser";
+
 const Detail = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -72,7 +74,7 @@ const Detail = () => {
                   Deskripsi Produk
                 </div>
                 <div className="text-xl md:text-2xl py-5 pl-5">
-                  {Data.deskripsi_produk}
+                  {parse(`${Data.deskripsi_produk}`)}
                 </div>
 
                 <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2">

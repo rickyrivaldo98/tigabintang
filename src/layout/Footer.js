@@ -20,8 +20,8 @@ const Footer = () => {
               <div>info@gloriamandiriteknik.com</div>
             </div>
             <div className="flex pt-4">
-              <div className="pr-14 md:pr-10">
-                <img className="m-auto" src={Maps} alt="" />
+              <div className="pr-10">
+                <img className="m-auto md:w-auto w-16" src={Maps} alt="" />
               </div>
               <div>
                 Jalan Soekarno-Hatta No 10, Kec. Payung Sekaki, Pekanbaru

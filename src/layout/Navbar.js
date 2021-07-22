@@ -7,7 +7,10 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <div className="flex justify-between items-center h-16 bg-white-500 text-black  pt-10 pb-10 ">
-        <Link className="text-2xl font-semibold tracking-wide pl-10 lg:hidden">
+        <Link
+          to="/"
+          className="text-2xl font-semibold tracking-wide pl-10 lg:hidden"
+        >
           TBS
         </Link>
         <div className="px-10 cursor-pointer lg:hidden" onClick={toggle}>

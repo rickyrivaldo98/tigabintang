@@ -12,6 +12,7 @@ import Login from "./pages/auth/Login";
 import PublicRoute from "./pages/utils/PublicRoute";
 import PrivateRoute from "./pages/utils/PrivateRoute";
 import Detail from "./pages/Detail";
+import ScrollToTop from "./components/ScrollToTop";
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
+      <ScrollToTop />
       <Switch>
         <PublicRoute path="/login" component={Login} />
         <PrivateRoute path="/admin" component={Admin} />

@@ -3,6 +3,8 @@ import service2 from "../assets/img/service2.jpeg";
 import service3 from "../assets/img/service3.jpeg";
 import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 const ServiceLanding = () => {
   return (
     <>
@@ -66,12 +68,14 @@ const ServiceLanding = () => {
           </div>
         </div>
         <div className="flex justify-center pt-4 md:pt-10">
-          <div
-            data-aos="fade-up"
-            className="text-xl md:text-3xl py-3 w-40 md:w-64 bg-yellow-400"
-          >
-            See More
-          </div>
+          <Link to="/service">
+            <div
+              data-aos="fade-up"
+              className="text-xl md:text-3xl py-3 w-40 md:w-64 bg-yellow-400"
+            >
+              See More
+            </div>
+          </Link>
         </div>
       </div>
     </>
