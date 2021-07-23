@@ -1,5 +1,5 @@
 import Teambg from "../assets/img/Teamlanding.svg";
-import Team1 from "../assets/img/tim1.jpeg";
+import Team1 from "../assets/img/team1.jpg";
 import "../assets/css/Team.css";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,10 @@ const TeamLanding = () => {
     <>
       <div className="bg-white">
         <div data-aos="fade-down" className="text-center pb-10">
-          <div className="text-yellow-500 font-bold text-xl md:text-2xl">
+          <div
+            data-aos="fade-up"
+            className="text-yellow-500 font-bold text-xl md:text-2xl"
+          >
             Our Team
           </div>
           <div className="font-bold text-2xl md:text-4xl">Meet Our Team</div>

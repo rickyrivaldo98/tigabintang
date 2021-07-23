@@ -9,8 +9,8 @@ const Header = () => {
         <div data-aos="zoom-in" className="">
           <Carousel />
         </div>
-        <div className="flex-none md:flex text-3xl w-full">
-          <div className="w-full md:w-1/3 py-20 bg-indigo-900 text-yellow-400">
+        <div className="mt-5 flex-none lg:flex text-3xl w-full">
+          <div className="w-full lg:w-1/3 py-20 bg-indigo-900 text-yellow-400">
             <div
               className="grid grid-cols-1  md:flex md:justify-center"
               data-aos="fade-down"
@@ -32,7 +32,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/3 py-20 ">
+          <div className="w-full lg:w-1/3 py-20 ">
             <div
               className="grid grid-cols-1  md:flex md:justify-center"
               data-aos="fade-up"
@@ -53,7 +53,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/3 py-20 bg-indigo-900 text-yellow-400">
+          <div className="w-full lg:w-1/3 py-20 bg-indigo-900 text-yellow-400">
             <div
               className="grid grid-cols-1  md:flex md:justify-center"
               data-aos="fade-down"

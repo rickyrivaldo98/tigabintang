@@ -1,7 +1,7 @@
 import service1 from "../assets/img/service1.jpeg";
 import service2 from "../assets/img/service2.jpeg";
 import service3 from "../assets/img/service3.jpeg";
-import service4 from "../assets/img/service4.png";
+import service4 from "../assets/img/service4_.png";
 import service5 from "../assets/img/service5.jpeg";
 import service6 from "../assets/img/service6.png";
 import "../assets/css/Service.css";
@@ -10,10 +10,14 @@ const ServiceComp = () => {
   return (
     <>
       <div className="text-center w-full py-20 bg-white overflow-hidden">
-        <div className="text-yellow-500 font-bold text-2xl">Our Service</div>
-        <div className="font-bold text-4xl">We Provide Service</div>
+        <div data-aos="fade-up" className="text-yellow-500 font-bold text-2xl">
+          Our Service
+        </div>
+        <div data-aos="fade-up" className="font-bold text-4xl">
+          We Provide Service
+        </div>
         <div className="md:flex md:justify-center  gap-x-20 py-14">
-          <div className="md:h-96 mb-5 md:mb-0 w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0 w-96">
             <div className="serviceMenu">
               <img src={service1} alt="" />
               <div className="textServices">Mencetak alat panen perkebunan</div>
@@ -27,7 +31,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={service2} alt="" />
               <div className="textServices">
@@ -43,7 +47,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={service3} alt="" />
               <div className="textServices">Penyetelan Besi</div>
@@ -59,7 +63,7 @@ const ServiceComp = () => {
           </div>
         </div>
         <div className="md:flex md:justify-center  gap-x-20 py-14">
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={service4} alt="" />
               <div className="textServices">Menjual Aksesoris Alat Panen</div>
@@ -73,7 +77,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={service5} alt="" />
               <div className="textServices">Packing</div>
@@ -87,7 +91,7 @@ const ServiceComp = () => {
               </div>
             </div>
           </div>
-          <div className="md:h-96 mb-5 md:mb-0  w-96">
+          <div data-aos="fade-down" className="md:h-96 mb-5 md:mb-0  w-96">
             <div className="serviceMenu">
               <img src={service6} alt="" />
               <div className="textServices">Menjual Penutup Keamanan</div>

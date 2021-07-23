@@ -7,8 +7,8 @@ const AboutUsLanding = () => {
   return (
     <>
       <div className="w-full bg-white ">
-        <div className="flex-none lg:flex py-16">
-          <div data-aos="fade-right" className="lg:pl-20 w-full lg:w-1/2">
+        <div className="flex-none xl:flex py-16">
+          <div data-aos="fade-right" className="lg:pl-20 w-full xl:w-1/2">
             <div className="">
               <img src={AboutImage} alt="" />
             </div>
@@ -20,21 +20,21 @@ const AboutUsLanding = () => {
             <div className=" text-xl font-semibold text-yellow-400">
               Solusi alat panen anda!
             </div>
-            <div className="pt-4 text-4xl md:text-7xl font-black text-black">
+            <div className="pt-4 text-4xl md:text-4xl lg:text-7xl font-black text-black">
               20 Years Experience
             </div>
             <div className="pt-6 md:text-xl xl:text-3xl text-black">
               Tiga Bintang Sukses (TBS) didirikan dalam memenuhi berbagai <br />
               macam kebutuhan produk di bidang perkebunan kelapa sawit.
             </div>
-            <div className="pt-6 md:text-3xl text-black">
+            <div className="pt-6 md:text-xl text-black">
               Kami memproduksi alat panen dengan kualitas terbaik dan sebagai
               <br />
               distributor dalam menyediakan alat penunjang untuk melakukan
               <br />
               panen sehingga menghasilkan hasil yang maksimal dan efektif.
             </div>
-            <div className="pt-6 md:text-3xl text-black">
+            <div className="pt-6 md:text-xl text-black">
               Saat ini kami telah bekerjasama dengan banyak perusahaan dalam
               <br />
               mensupply alat panen yang berkualitas dan harga bersaing. Dengan
@@ -47,8 +47,8 @@ const AboutUsLanding = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex text-4xl font-black">
-          <div className="w-full md:w-1/2 py-20 bg-indigo-900 text-yellow-400">
+        <div className="xl:flex text-4xl font-black">
+          <div className="w-full xl:w-1/2 py-20 bg-indigo-900 text-yellow-400">
             <div className="w-full  md:flex">
               <div data-aos="fade-up" className="w-full md:w-1/2">
                 <div className="mx-auto flex justify-center">
@@ -78,7 +78,7 @@ const AboutUsLanding = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 py-20 bg-yellow-400">
+          <div className="w-full xl:w-1/2 py-20 bg-yellow-400">
             <div className="w-full  md:flex">
               <div data-aos="fade-down" className="w-full md:w-1/2">
                 <div className="mx-auto flex justify-center">

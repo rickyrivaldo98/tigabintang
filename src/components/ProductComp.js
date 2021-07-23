@@ -5,14 +5,18 @@ import "../assets/css/Service.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
+import UsePreloader from "./UsePreloader";
 
 const ProductComp = () => {
   const [Data, setData] = useState([]);
   const [Loading, setLoading] = useState(false);
+  const [loader, showLoader, hideLoader] = UsePreloader();
 
   useEffect(() => {
     async function getData() {
-      setLoading(true);
+      showLoader();
+
+      // setLoading(true);
       const res = await axios({
         url: "https://api.tigabintangsukses.com/v1/produk/",
         method: "get",
@@ -26,7 +30,9 @@ const ProductComp = () => {
       } else {
         console.log(res.status);
       }
-      setLoading(false);
+      hideLoader();
+
+      // setLoading(false);
     }
     getData();
   }, []);
@@ -44,7 +50,10 @@ const ProductComp = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 gap-x-0 md:gap-y-20 lg:grid-cols-3 mx-auto container gap-y-16">
               {Data.map((x) => (
                 <Link to={`/produk/${x.id}`}>
-                  <div className="md:h-96 mb-5 md:mb-0 w-96  mx-auto">
+                  <div
+                    data-aos="fade-up"
+                    className="md:h-96 mb-5 md:mb-0 w-96  mx-auto"
+                  >
                     <div className="serviceMenu">
                       <img
                         src={
@@ -72,6 +81,7 @@ const ProductComp = () => {
           </div>
         </>
       )}
+      {loader}
     </>
   );
 };

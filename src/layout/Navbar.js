@@ -31,40 +31,41 @@ const Navbar = ({ toggle }) => {
         </div>
       </div>
       <div className="lg:mx-28 pt-10">
-        <div className="flex-none lg:flex lg:justify-between">
+        <div className="flex-none xl:flex xl:justify-between">
           <div
             data-aos="fade-right"
-            className="text-3xl md:text-4xl text-center lg:text-left lg:text-6xl font-black"
+            className="w-full xl:w-full text-3xl md:text-4xl text-center lg:text-left lg:text-6xl font-black"
           >
             TIGA BINTANG <br /> SUKSES
           </div>
+
           <div
             data-aos="fade-up"
             className=" grid grid-cols-1 lg:grid-cols-3 mx-auto text-xs md:text-lg lg:text-xl font-light"
           >
-            <div className="lg:flex   lg:pr-28 pt-5">
+            <div className="xl:flex   xl:pr-28 pt-5">
               <div>
                 <img className="mx-auto" src={Calendar} alt="" />
               </div>
-              <div className="lg:pl-7  text-center lg:text-left">
+              <div className="xl:pl-7  text-center xl:text-left">
                 <div>Opening Hour</div>
                 <div className="mt-3">Mon-fri, 8:00-17:00</div>
               </div>
             </div>
-            <div className="lg:flex   lg:pr-28 pt-2">
+            <div className="xl:flex   xl:pr-28 pt-2">
               <div>
                 <img className="mx-auto" src={Callcenter} alt="" />
               </div>
-              <div className="lg:pl-7 lg:pt-3 text-center lg:text-left">
+              <div className="xl:pl-7 xl:pt-3 text-center xl:text-left">
                 <div>Call Us</div>
                 <div className="mt-3">081225466738</div>
               </div>
             </div>
-            <div className="lg:flex pt-5">
+            <div className="xl:flex pt-5">
               <div>
                 <img className="mx-auto" src={Email} alt="" />
               </div>
-              <div className="lg:pl-7  text-center lg:text-left">
+              <div className="xl:pl-7  text-center xl:text-left">
                 <div>Email Us</div>
                 <div className="mt-3">info@gloriamandiriteknik.com</div>
               </div>

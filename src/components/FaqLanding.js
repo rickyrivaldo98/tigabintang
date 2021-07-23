@@ -10,10 +10,15 @@ const FaqLanding = () => {
     <>
       <div className="py-20 bg-white">
         <div data-aos="fade-down" className="text-center pb-10">
-          <div className="text-yellow-500 font-bold text-xl md:text-2xl">
+          <div
+            data-aos="fade-up"
+            className="text-yellow-500 font-bold text-xl md:text-2xl"
+          >
             Frequently Asked Question
           </div>
-          <div className="font-bold text-2xl md:text-4xl">You May Ask</div>
+          <div data-aos="fade-up" className="font-bold text-2xl md:text-4xl">
+            You May Ask
+          </div>
         </div>
         <div data-aos="fade-up" className="w-full md:flex">
           <div className="w-full md:w-1/2 px-20">

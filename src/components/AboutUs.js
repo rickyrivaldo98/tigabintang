@@ -9,11 +9,11 @@ const AboutUs = () => {
       <div className="w-full bg-white ">
         <div className="flex-none lg:flex  py-16">
           <div className="lg:pl-20 w-full lg:w-1/2">
-            <div className="">
+            <div data-aos="fade-left" className="">
               <img src={AboutImage} alt="" />
             </div>
           </div>
-          <div className="mx-auto md:pl-10 w-2/3">
+          <div data-aos="fade-right" className="mx-auto md:pl-10 w-2/3">
             <div className="pt-10 text-4xl font-semibold text-yellow-400">
               Welcome to Tiga Bintang Sukses
             </div>
@@ -48,8 +48,11 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="md:flex text-4xl font-black">
-          <div className="w-full md:w-1/2 py-20 bg-indigo-900 text-yellow-400">
-            <div className="w-full  md:flex">
+          <div
+            data-aos="fade-down"
+            className="w-full md:w-1/2 py-20 bg-indigo-900 text-yellow-400"
+          >
+            <div data-aos="fade-up" className="w-full  md:flex">
               <div className="w-full md:w-1/2">
                 <div className="mx-auto flex justify-center">
                   <div className="md:pr-5">
@@ -78,8 +81,11 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 py-20 bg-yellow-400">
-            <div className="w-full  md:flex">
+          <div
+            data-aos="fade-up"
+            className="w-full md:w-1/2 py-20 bg-yellow-400"
+          >
+            <div data-aos="fade-down" className="w-full  md:flex">
               <div className="w-full md:w-1/2">
                 <div className="mx-auto flex justify-center">
                   <div className="pr-5">
