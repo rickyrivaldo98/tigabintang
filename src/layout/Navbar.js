@@ -3,7 +3,23 @@ import Calendar from "../assets/img/calendar.svg";
 import Callcenter from "../assets/img/callcenter.svg";
 import Email from "../assets/img/email.svg";
 import { FaCaretDown } from "react-icons/fa";
+import { createPopper } from "@popperjs/core";
+import React from "react";
+
 const Navbar = ({ toggle }) => {
+  // dropdown props
+  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
+  const btnDropdownRef = React.createRef();
+  const popoverDropdownRef = React.createRef();
+  const openDropdownPopover = () => {
+    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
+      placement: "bottom-start",
+    });
+    setDropdownPopoverShow(true);
+  };
+  const closeDropdownPopover = () => {
+    setDropdownPopoverShow(false);
+  };
   return (
     <>
       <div className="flex justify-between items-center h-16 bg-white-500 text-black  pt-10 pb-10 ">
@@ -34,14 +50,14 @@ const Navbar = ({ toggle }) => {
         <div className="flex-none xl:flex xl:justify-between">
           <div
             data-aos="fade-right"
-            className="w-full xl:w-full text-3xl md:text-4xl text-center lg:text-left lg:text-6xl font-black"
+            className=" text-3xl md:text-4xl text-center lg:text-left lg:text-6xl font-black"
           >
             TIGA BINTANG <br /> SUKSES
           </div>
 
           <div
             data-aos="fade-up"
-            className=" grid grid-cols-1 lg:grid-cols-3 mx-auto text-xs md:text-lg lg:text-xl font-light"
+            className=" grid grid-cols-1 xl:grid-cols-3 mx-auto text-xs md:text-lg lg:text-xl font-light"
           >
             <div className="xl:flex   xl:pr-28 pt-5">
               <div>
@@ -87,10 +103,37 @@ const Navbar = ({ toggle }) => {
               <Link to="/service">
                 <div>SERVICE</div>
               </Link>
-              <Link to="/produk">
+              <Link>
                 <div className="flex">
-                  <div>PRODUCT</div>
-                  <div className="pl-4">
+                  <div>
+                    <button
+                      className=" text-2xl font-medium "
+                      type="button"
+                      ref={btnDropdownRef}
+                      onClick={() => {
+                        dropdownPopoverShow
+                          ? closeDropdownPopover()
+                          : openDropdownPopover();
+                      }}
+                    >
+                      PRODUCT
+                    </button>
+                    <div
+                      ref={popoverDropdownRef}
+                      className={
+                        (dropdownPopoverShow ? "block " : "hidden ") +
+                        "bg-indigo-500 z-50 float-left py-2 px-5 list-none text-left rounded shadow-lg mt-1 min-w-48"
+                      }
+                    >
+                      <Link
+                        to="/produk"
+                        className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
+                      >
+                        Product
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="pl-1 pt-1">
                     <FaCaretDown />
                   </div>
                 </div>

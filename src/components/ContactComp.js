@@ -6,11 +6,18 @@ const ContactComp = () => {
   return (
     <>
       <div className="text-center w-full py-20 bg-white overflow-hidden">
-        <div className="text-yellow-500 font-bold text-2xl">Get In Touch</div>
-        <div className="font-bold text-4xl mb-10">For Any Query</div>
+        <div data-aos="fade-up" className="text-yellow-500 font-bold text-2xl">
+          Get In Touch
+        </div>
+        <div data-aos="fade-down" className="font-bold text-4xl mb-10">
+          For Any Query
+        </div>
         <div className="bg-indigo-900 justify-center ">
           <div className="md:flex container mx-auto  gap-x-10 py-14 ">
-            <div className="h-96 w-full md:w-1/3 border-white border-solid border bg-indigo-900 flex items-center">
+            <div
+              data-aos="fade-left"
+              className="h-96 w-full md:w-1/3 border-white border-solid border bg-indigo-900 flex items-center"
+            >
               <div className="ml-7">
                 <img src={Maps} alt="" />
               </div>
@@ -23,7 +30,10 @@ const ContactComp = () => {
                 </div>
               </div>
             </div>
-            <div className="h-96  w-full md:w-1/3 border-white border-solid border bg-indigo-900 flex items-center">
+            <div
+              data-aos="fade-up"
+              className="h-96  w-full md:w-1/3 border-white border-solid border bg-indigo-900 flex items-center"
+            >
               <div className="ml-7">
                 <img src={Telephone} alt="" />
               </div>
@@ -34,7 +44,10 @@ const ContactComp = () => {
                 </div>
               </div>
             </div>
-            <div className="h-96  w-full md:w-1/3  border-white border-solid border bg-indigo-900 flex items-center">
+            <div
+              data-aos="fade-right"
+              className="h-96  w-full md:w-1/3  border-white border-solid border bg-indigo-900 flex items-center"
+            >
               <div className="ml-4 md:ml-7">
                 <img src={Email} alt="" />
               </div>
