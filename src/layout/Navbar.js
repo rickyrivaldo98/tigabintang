@@ -110,7 +110,12 @@ const Navbar = ({ toggle }) => {
                       className=" text-2xl font-medium "
                       type="button"
                       ref={btnDropdownRef}
-                      onClick={() => {
+                      onMouseEnter={() => {
+                        dropdownPopoverShow
+                          ? closeDropdownPopover()
+                          : openDropdownPopover();
+                      }}
+                      onMouseLeave={() => {
                         dropdownPopoverShow
                           ? closeDropdownPopover()
                           : openDropdownPopover();
@@ -119,21 +124,163 @@ const Navbar = ({ toggle }) => {
                       PRODUCT
                     </button>
                     <div
+                      onMouseEnter={() => {
+                        openDropdownPopover();
+                      }}
+                      onMouseLeave={() => {
+                        closeDropdownPopover();
+                      }}
                       ref={popoverDropdownRef}
                       className={
                         (dropdownPopoverShow ? "block " : "hidden ") +
-                        "bg-indigo-500 z-50 float-left py-2 px-5 list-none text-left rounded shadow-lg mt-1 min-w-48"
+                        "bg-white z-50 float-left py-2 px-5 list-none text-left rounded shadow-lg mt-1 min-w-48"
                       }
                     >
-                      <Link
-                        to="/produk"
-                        className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
-                      >
-                        Product
-                      </Link>
+                      <div className="flex">
+                        <div className="mt-2 mr-7">
+                          <Link
+                            to="/produk"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white bg-black "
+                          >
+                            Semua Produk
+                          </Link>
+                        </div>
+                        <div>
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                            Alat Panen
+                          </div>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/1";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Harvesting Sickle (Egrek)
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/2";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Chisel (Dodos)
+                          </Link>
+                          <Link
+                            to="/produk"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Harvesting Axe (Kampak Buah)
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/3";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Loading Spike (Tojok)
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/4";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Hook (Gancu)
+                          </Link>
+                        </div>
+                        <div className="ml-10 mr-10">
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                            Pelengkap Panen
+                          </div>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/5";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Klem Egrek
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/6";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Sarung Tangan
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/7";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Piring Buah Sawit
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/8";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Holder Egrek
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/9";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Batu Asah
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/10";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Keranjang Buah
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/11";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Garuh
+                          </Link>
+                        </div>
+                        <div>
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                            Penutup Keamanan
+                          </div>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/12";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Sarung Egrek
+                          </Link>
+                          <Link
+                            onClick={() => {
+                              window.location.href = "/produk/13";
+                            }}
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                          >
+                            Sarung Dodos
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="pl-1 pt-1">
+                  <div
+                    className="pl-1 pt-1"
+                    onClick={() => {
+                      dropdownPopoverShow
+                        ? closeDropdownPopover()
+                        : openDropdownPopover();
+                    }}
+                  >
                     <FaCaretDown />
                   </div>
                 </div>
