@@ -23,7 +23,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <div className="flex justify-between items-center h-16 bg-white-500 text-black  pt-10 pb-10 ">
-        <Link
+        {/* <Link
           to="/"
           className="text-2xl font-semibold tracking-wide pl-10 lg:hidden"
         >
@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
       <div className="lg:mx-28 pt-10">
         <div className="flex-none xl:flex xl:justify-between">
