@@ -1,7 +1,6 @@
 import AboutUs from "../components/AboutUs";
 import React, { useEffect, useState } from "react";
 import FaqLanding from "../components/FaqLanding";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 
@@ -14,8 +13,6 @@ const About = () => {
   };
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
-
       <Navbar toggle={toggle} />
       <div className="overflow-hidden">
         <div className="py-20 text-4xl font-semibold text-center">

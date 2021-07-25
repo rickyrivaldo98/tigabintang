@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import ProductComp from "../components/ProductComp";
@@ -13,8 +12,6 @@ const Product = () => {
   };
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
-
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Our Product</div>

@@ -7,8 +7,6 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../layout/Navbar";
-import Dropdown from "../layout/Dropdown";
-import { Burger, Menu } from "../layout";
 import Footer from "../layout/Footer";
 import Sidebar from "../layout/Sidebar";
 const Landing = () => {

@@ -4,7 +4,6 @@ import Team1 from "../assets/img/team1.jpg";
 import Team2 from "../assets/img/team2.jpg";
 
 import "../assets/css/Service.css";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 const Service = () => {
@@ -16,7 +15,6 @@ const Service = () => {
   };
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Our Team</div>

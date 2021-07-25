@@ -1,6 +1,5 @@
 import ServiceComp from "../components/ServiceComp";
 import React, { useEffect, useState } from "react";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 
@@ -13,8 +12,6 @@ const Service = () => {
   };
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
-
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Our Service</div>

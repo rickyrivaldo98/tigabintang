@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import axios from "axios";
@@ -43,8 +42,6 @@ const Detail = () => {
 
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
-
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div>Our Product</div>

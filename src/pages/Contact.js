@@ -1,5 +1,4 @@
 import ContactComp from "../components/ContactComp";
-import { Menu } from "../layout";
 import Navbar from "../layout/Navbar";
 import React, { useEffect, useState } from "react";
 import Footer from "../layout/Footer";
@@ -13,8 +12,6 @@ const Contact = () => {
   };
   return (
     <>
-      <Menu open={isOpen} setOpen={setIsOpen} />
-
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Contact Us</div>

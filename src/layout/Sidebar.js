@@ -53,13 +53,11 @@ const Sidebar = () => {
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-          <h1
-            style={{ textAlign: "center", marginLeft: "200px", color: "green" }}
-          >
-            GeeksforGeeks
+          <h1 className="absolute text-xl text-white font-bold right-5 lg:right-24">
+            TBS
           </h1>
         </Nav>
-        <SidebarNav sidebar={sidebar}>
+        <SidebarNav className="overflow-y-scroll" sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
