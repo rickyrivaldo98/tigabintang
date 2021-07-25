@@ -29,12 +29,7 @@ const Menu = ({ open, ...props }) => {
         <div>SERVICE</div>
       </Link>
       <Link tabIndex={tabIndex} to="/produk">
-        <div className="flex">
-          <div>PRODUCT</div>
-          <div className="pl-4">
-            <FaCaretDown />
-          </div>
-        </div>
+        <div>PRODUCT</div>
       </Link>
       <Link tabIndex={tabIndex} to="/contact">
         <div>CONTACT</div>

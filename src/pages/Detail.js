@@ -6,6 +6,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { data } from "autoprefixer";
 import parse from "html-react-parser";
+import UsePreloader from "../components/UsePreloader";
 
 const Detail = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,12 @@ const Detail = () => {
   let { id } = useParams();
   const [Data, setData] = useState([]);
   const [Loading, setLoading] = useState(false);
+  const [loader, showLoader, hideLoader] = UsePreloader();
 
   useEffect(() => {
     async function getData() {
-      setLoading(true);
+      showLoader();
+
       const res = await axios({
         url: `https://api.tigabintangsukses.com/v1/produk/${id}`,
         method: "get",
@@ -33,7 +36,7 @@ const Detail = () => {
       } else {
         console.log(res.status);
       }
-      setLoading(false);
+      hideLoader();
     }
     getData();
   }, []);
@@ -131,6 +134,7 @@ const Detail = () => {
         )}
       </div>
       <Footer />
+      {loader}
     </>
   );
 };

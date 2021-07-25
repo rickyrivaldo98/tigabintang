@@ -140,20 +140,20 @@ const Navbar = ({ toggle }) => {
                         <div className="mt-2 mr-7">
                           <Link
                             to="/produk"
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white bg-black "
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white bg-black transition duration-500 ease-in-out hover:text-yellow-500 "
                           >
                             Semua Produk
                           </Link>
                         </div>
                         <div>
-                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500">
                             Alat Panen
                           </div>
                           <Link
                             onClick={() => {
                               window.location.href = "/produk/1";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Harvesting Sickle (Egrek)
                           </Link>
@@ -161,13 +161,13 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/2";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Chisel (Dodos)
                           </Link>
                           <Link
                             to="/produk"
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Harvesting Axe (Kampak Buah)
                           </Link>
@@ -175,7 +175,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/3";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Loading Spike (Tojok)
                           </Link>
@@ -183,20 +183,20 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/4";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Hook (Gancu)
                           </Link>
                         </div>
                         <div className="ml-10 mr-10">
-                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500">
                             Pelengkap Panen
                           </div>
                           <Link
                             onClick={() => {
                               window.location.href = "/produk/5";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Klem Egrek
                           </Link>
@@ -204,7 +204,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/6";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Sarung Tangan
                           </Link>
@@ -212,7 +212,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/7";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Piring Buah Sawit
                           </Link>
@@ -220,7 +220,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/8";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Holder Egrek
                           </Link>
@@ -228,7 +228,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/9";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Batu Asah
                           </Link>
@@ -236,7 +236,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/10";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Keranjang Buah
                           </Link>
@@ -244,20 +244,20 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/11";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Garuh
                           </Link>
                         </div>
                         <div>
-                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black">
+                          <div className="text-sm py-2 px-4 font-black block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500">
                             Penutup Keamanan
                           </div>
                           <Link
                             onClick={() => {
                               window.location.href = "/produk/12";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Sarung Egrek
                           </Link>
@@ -265,7 +265,7 @@ const Navbar = ({ toggle }) => {
                             onClick={() => {
                               window.location.href = "/produk/13";
                             }}
-                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black"
+                            className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-black transition duration-500 ease-in-out hover:text-yellow-500"
                           >
                             Sarung Dodos
                           </Link>
