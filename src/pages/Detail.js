@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import { data } from "autoprefixer";
 import parse from "html-react-parser";
 import UsePreloader from "../components/UsePreloader";
+import Sidebar from "../layout/Sidebar";
 
 const Detail = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,9 @@ const Detail = () => {
 
   return (
     <>
+      <div className="lg:hidden">
+        <Sidebar />
+      </div>
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div>Our Product</div>

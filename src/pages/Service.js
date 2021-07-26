@@ -2,6 +2,7 @@ import ServiceComp from "../components/ServiceComp";
 import React, { useEffect, useState } from "react";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import Sidebar from "../layout/Sidebar";
 
 const Service = () => {
   // fungsi navbar
@@ -12,6 +13,9 @@ const Service = () => {
   };
   return (
     <>
+      <div className="lg:hidden">
+        <Sidebar />
+      </div>
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Our Service</div>

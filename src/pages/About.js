@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import FaqLanding from "../components/FaqLanding";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import Sidebar from "../layout/Sidebar";
 
 const About = () => {
   // fungsi navbar
@@ -13,6 +14,9 @@ const About = () => {
   };
   return (
     <>
+      <div className="lg:hidden">
+        <Sidebar />
+      </div>
       <Navbar toggle={toggle} />
       <div className="overflow-hidden">
         <div className="py-20 text-4xl font-semibold text-center">

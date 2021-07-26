@@ -2,6 +2,7 @@ import ContactComp from "../components/ContactComp";
 import Navbar from "../layout/Navbar";
 import React, { useEffect, useState } from "react";
 import Footer from "../layout/Footer";
+import Sidebar from "../layout/Sidebar";
 
 const Contact = () => {
   // fungsi navbar
@@ -12,6 +13,9 @@ const Contact = () => {
   };
   return (
     <>
+      <div className="lg:hidden">
+        <Sidebar />
+      </div>
       <Navbar toggle={toggle} />
       <div className="py-20 text-4xl font-semibold text-center">
         <div data-aos="fade-up">Contact Us</div>
